@@ -1,0 +1,272 @@
+/* footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+footer .site-brand{
+    margin-bottom: 1.5rem;
+    display: block;
+    font-size: 2rem!important;
+}
+.footer-item{
+    margin: 3rem 0;
+}
+.footer-item a{
+    font-size: 1.2rem;
+    color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.footer-item a:hover{
+    color: var(--green);
+}
+.footer-item ul{
+    padding: 0;
+}
+.footer-item h2{
+    margin-bottom: 1.4rem;;
+}
+.social-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.social-links li{
+    margin: 0.5rem;
+}
+.footer-item:nth-child(3) li{
+    margin: 0.5rem 0;
+}
+.footer-item:nth-child(3) a{
+    display: inline-block;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+.subscribe-form form{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.subscribe-form form input{
+    width: 100%;
+    max-width: 300px;
+}
+.subscribe-form .form-control{
+    border-color: rgba(255, 255, 255, 0.3);
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.subscribe-form .form-control:focus{
+    border-color: #fff;
+}
+.subscribe-form form input[type = "email"]::-webkit-input-placeholder{
+    color: #fff;
+    opacity: 0.3;
+}
+.subscribe-form form input[type = "email"]::-moz-placeholder{
+    color: #fff;
+    opacity: 0.3;
+}
+.subscribe-form form input[type = "email"]:-ms-input-placeholder{
+    color: #fff;
+    opacity: 0.3;
+}
+.subscribe-form form input[type = "email"]::-ms-input-placeholder{
+    color: #fff;
+    opacity: 0.3;
+}
+.subscribe-form form input[type = "email"]::placeholder{
+    color: #fff;
+    opacity: 0.3;
+}
+@media screen and (min-width: 768px){
+    .header-title p{
+        font-size: 1.4rem;
+    }
+    .featured-row,  .footer-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-row{
+        text-align: left;
+    }
+    .social-links{
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+    }
+    .social-links li:nth-child(1){
+        margin-left: 0;
+    }
+    .subscribe-form form{
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .gallery-row, .popular-row, .blog-row, .facts-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .gallery-item{
+        margin: 0;
+    }
+    .popular-row, .facts-row{
+        gap: 0;
+    }
+    .facts-row{
+        -webkit-column-gap: 5rem;
+           -moz-column-gap: 5rem;
+                column-gap: 5rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .test-row, .gallery-row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-row, .popular-row{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.header-form{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    border-radius: 0.2rem;
+}
+.header-form h3{
+    font-size: 1.2rem;
+}
+.header-form form{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1.8rem;
+}
+.header-form form .form-control{
+    -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.header-form input[type = "date"]{
+    text-transform: uppercase;
+}
+.header-form input:not([type = "submit"])::-webkit-input-placeholder{
+    color: #fff;
+}
+.header-form input:not([type = "submit"])::-moz-placeholder{
+    color: #fff;
+}
+.header-form input:not([type = "submit"]):-ms-input-placeholder{
+    color: #fff;
+}
+.header-form input:not([type = "submit"])::-ms-input-placeholder{
+    color: #fff;
+}
+.header-form input:not([type = "submit"])::placeholder{
+    color: #fff;
+}
+::-webkit-calendar-picker-indicator{
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+.header-form .btn{
+    margin-top: 0.8rem;
+}
+
+.header-form form .form-control{
+    -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+ .form-control{
+    border-color: rgba(255, 255, 255, 0.3);
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.subscribe-form .form-control:focus{
+    border-color: #fff;
+}
+.form-control{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: block;
+    margin: 1.6rem auto;
+}
+.form-control{
+    width: 100%;
+    margin: 0.6rem 0;
+    max-width: 500px;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color:  rgba(0, 128, 128, 0.863);;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.header-form .form-control, .header-form .btn{
+    margin: 0 0.5rem;
+}
+@media screen and (min-width: 992px){
+.contact-form .form-control{
+    margin-left: 0;
+}
+.contact-form .form-control:nth-child(1){
+    margin-top: 0;
+}}
+.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+  .site-brand{
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    opacity: 0.95;
+}
+.site-brand span{
+    font-weight: 300;
+}
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+  }
